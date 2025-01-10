@@ -1,17 +1,21 @@
 # Weather App
 
-Modern and user-friendly weather application.
+A modern and user-friendly weather application that provides real-time weather information and forecasts.
 
 ## Features
 
-- Weather tracking for multiple cities
+- Multi-city weather tracking
 - Real-time weather updates
 - 5-day weather forecast
 - Dark/Light theme support
-- Automatic synchronization with system theme
-- Temperature unit switching (Celsius/Fahrenheit)
-- Time format switching (12/24 hour)
-- Responsive design
+- System theme synchronization
+- Temperature units (Celsius/Fahrenheit)
+- Time format options (12/24 hour)
+- Responsive design for all devices
+- Multi-language support (English/Turkish)
+- Offline support with PWA
+- Local data caching
+- Location search with autocomplete
 
 ## Installation
 
@@ -27,32 +31,63 @@ git clone [repo-url]
 npm install
 ```
 
-3. Create `.env` file and add your OpenWeather API key:
+3. Create `.env` file in the root directory and add your OpenWeather API key:
 
-```
-OPENWEATHER_API_KEY=your_api_key_here
+```env
+VITE_OPENWEATHER_API_KEY=your_api_key_here
 ```
 
 4. Start development server:
 
 ```bash
-npm start
+npm run dev
 ```
 
-5. Build the project:
+5. Build for production:
 
 ```bash
 npm run build
 ```
 
-## Technologies
+## Technologies Used
 
 - HTML5
 - CSS3
 - JavaScript (ES6+)
 - OpenWeather API
-- Parcel Bundler
+- Vite (Build tool)
+- Progressive Web App (PWA)
+- Local Storage for caching
+- Service Workers
+
+## Project Structure
+
+```
+weather-app/
+├── src/
+│   ├── script.js
+│   ├── styles.css
+│   └── index.html
+├── public/
+│   ├── icons/
+│   └── manifest.json
+├── package.json
+└── README.md
+```
+
+## Contributing
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
 ## License
 
-MIT
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## Acknowledgments
+
+- OpenWeather API for weather data
+- Icons from OpenWeather
